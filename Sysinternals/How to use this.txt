@@ -1,0 +1,9 @@
+-transfer the zip over and extract on the local machine
+-staged extracted folder on all workstations left (using the C:\TPG\Scripts folder)
+-run the following:
+C:\TPG\scripts\SysinternalsSuite\accesschk.exe /accepteula -uwcqv "Everyone" *
+C:\TPG\scripts\SysinternalsSuite\accesschk.exe /accepteula -uwcqv "Users" *
+C:\TPG\scripts\SysinternalsSuite\accesschk.exe /accepteula -uwcqv "Domain Users" *
+C:\TPG\scripts\SysinternalsSuite\accesschk.exe /accepteula -uwcqv "Authenticated Users" *
+-all 4 should return 'No matching objects found.'
+-you can run via ps session to go faster
